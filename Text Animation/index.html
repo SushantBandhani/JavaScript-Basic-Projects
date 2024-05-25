@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Text Animation</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        font-family: "poppins", sans-serif;
+        background-image: linear-gradient(45deg, #5ee7df, #b490ca);
+        color: white;
+        font-size: 2rem;
+        margin: 0;
+        padding: 2rem;
+      }
+      @media (max-width: 500px) {
+        body {
+          padding: 1rem;
+        }
+      }
+      @media (min-width: 601px) and (max-width: 1999px) {
+        body {
+          padding: 1.5rem;
+        }
+      }
+      @media (min-width: 1200px) {
+        body {
+          padding: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const text =
+        "JavaScript: where false == [] is true, but false === [] is false. It's the language that turns debugging into a guessing game and keeps you wondering why you ever decided to be a web developer in the first place. But hey, at least it's never boring!";
+      let index = 0;
+
+      const wait = (dl) => new Promise((resolve) => setTimeout(resolve, dl));
+
+      const Write = async () => {
+        while (index <= text.length) {
+          document.body.innerText = text.slice(0, index);
+          index++;
+          await wait(100); 
+        }
+      };
+
+      Write();
+
+    </script>
+  </body>
+</html>
