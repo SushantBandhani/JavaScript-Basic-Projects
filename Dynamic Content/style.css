@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-    max-width: 50vw;
+    max-width: 60vw;
     display: flex;
     height: 98px;
     margin-top: 10px;
