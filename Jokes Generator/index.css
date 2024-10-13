@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: "Sofia", sans-serif;
+    background-color: #10aaf1f1;
+    color: white;
+    line-height: 1.8;
+    height: 10;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 30%;
+  width: 400px;
+  margin: auto;
+  background-color: #fff;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.418);
+  position: relative;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+  0% {
+    top: -500px;
+  }
+  100% {
+    top: 35vh;
+  }
+}
+
+.mycont {
+  width: 95%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+.container h3,
+.joke p {
+  text-align: center;
+}
+
+.jokeContainer {
+  width: 50%;
+  max-width: 500px;
+  padding:15px 0px ;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  border: white 1px solid;
+  cursor: pointer;
+  border-radius: 1em;
+  color: #fff;
+  background-color: rgb(236, 209, 51);
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.418);
+}
+
+.joke {
+  width: 100%;
+  padding-top: 4px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn:hover {
+  color: black;
+}
